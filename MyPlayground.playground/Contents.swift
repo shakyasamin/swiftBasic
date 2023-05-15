@@ -3,17 +3,7 @@ import UIKit
 
 
 
-var ages = [18,33,55,17,94,12,26,17,33]
-
-//var agesSet: Set<Int> = []
-
-var agesSet = Set(ages)
-
-agesSet.insert(107)
-agesSet.contains(107)
-
-print(agesSet)
-
+//VARIABLE CONSTANT
 //var highScore = 0
 //highScore = 100
 //
@@ -22,6 +12,8 @@ print(agesSet)
 //var currentUser = 124
 //currentUser = 1000
 //
+
+//ARRAY
 //var ages: [Int] = [10,10, 15 , 20 , 19 , 25, 30]
 //ages.count
 //ages.first
@@ -34,3 +26,33 @@ print(agesSet)
 //ages.reverse()
 //ages.shuffle()
 //print(ages)
+
+//SETS
+//var ages = [18,33,55,17,94,12,26,17,33]
+//
+////var agesSet: Set<Int> = []
+//
+//var agesSet = Set(ages)
+//
+//agesSet.insert(107)
+//agesSet.contains(107)
+//
+//print(agesSet)
+
+
+//DICTIONARY key : value pair
+
+//struct Developer {
+//    let name: String
+//    let jobTitle: String
+//    var devices: [String:  String]
+//}
+
+let devices: [String: String] = [
+    "phone":"iPhone X",
+    "laptop": "2020 Macbook Pro",
+    "tablet": "2020 ipad Pro",
+    "desktop" : "2020 iMac Pro"
+]
+
+devices["phone"]
