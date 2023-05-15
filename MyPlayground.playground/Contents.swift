@@ -163,3 +163,45 @@ import UIKit
 //    print(phone.rawValue)
 //}
 //getSeansOpinion(on: .nokia)
+
+
+//SWITCH STATEMENT
+
+enum Phone {
+    case iPhone
+    case iPhone13ProMax
+    case nokia
+    case pixel
+}
+
+func seansOpinion(on phone:Phone) {
+    switch phone {
+    case .iPhone:
+        print( "This Will be my next phone.")
+    case .iPhone13ProMax:
+        print("It makes design hard")
+    case .nokia:
+        print("Can't be broken, Classic.")
+    case .pixel:
+        print("Hardware is Great. Android is ewww.")
+    }
+    
+}
+seansOpinion(on: .pixel)
+
+let matchMakingRank = 1500
+func determinePlayerLeague(from rank: Int){
+    switch rank {
+    case 0:
+        print("play the game to determine your league")
+    case 1..<50 :
+        print("You are in BRONZE League")
+    case 50..<100:
+        print("You are in SILVER League")
+    case 100..<200:
+        print("You are in GOLD League")
+    default:
+        print("You are in a league of your own.We dont know where you are")
+    }
+}
+determinePlayerLeague(from: matchMakingRank)
