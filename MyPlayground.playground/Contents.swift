@@ -48,11 +48,30 @@ import UIKit
 //    var devices: [String:  String]
 //}
 
-let devices: [String: String] = [
-    "phone":"iPhone X",
-    "laptop": "2020 Macbook Pro",
-    "tablet": "2020 ipad Pro",
-    "desktop" : "2020 iMac Pro"
-]
+//let devices: [String: String] = [
+//    "phone":"iPhone X",
+//    "laptop": "2020 Macbook Pro",
+//    "tablet": "2020 ipad Pro",
+//    "desktop" : "2020 iMac Pro"
+//]
+//
+//devices["phone"]
 
-devices["phone"]
+// FUNCTIONS
+
+//func printInstructorName() {
+//    print("Samin Shakya")
+//}
+//printInstructorName()
+
+func printInstructors(name: String) {
+    print(name)
+}
+printInstructors(name: "Joe")
+
+
+func add(firstNumber: Int, to secondNumber: Int) -> Int{
+    let sum = firstNumber + secondNumber
+    return sum
+}
+add(firstNumber: 18, to: 100)
