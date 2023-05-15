@@ -110,14 +110,56 @@ import UIKit
 
 //For Loop
 
-let allStars = ["James", "Davis", "Harden", "Doncic", "Leonard"]
+//let allStars = ["James", "Davis", "Harden", "Doncic", "Leonard"]
+//
+//for player in allStars{
+//    //print(player)
+//}
+//var randomInts : [Int] = []
+//for _ in 0..<25 {
+//    let randonNumber = Int.random(in: 0...100)
+//    randomInts.append(randonNumber)
+//}
+//print(randomInts)
 
-for player in allStars{
-    //print(player)
-}
-var randomInts : [Int] = []
-for _ in 0..<25 {
-    let randonNumber = Int.random(in: 0...100)
-    randomInts.append(randonNumber)
-}
-print(randomInts)
+
+//ENUM - group of values that are related put together
+
+//enum Direction {
+//    case north
+//    case east
+//    case south
+//    case west
+//}
+//enum Phone {
+//    case iPhone11
+//    case iPhoneSE
+//    case pixel
+//    case nokia
+//}
+//
+//func getSeansOpinion(on phone: Phone){
+//    if phone == .iPhone11{
+//        print("This will be my next phone.")
+//    }else if phone == .iPhoneSE{
+//        print("I dislike this phone size.It makes design hard.")
+//    }else if phone == .pixel{
+//        print("Hardware is great.Android is ewww")
+//    }else{
+//        print("Can't be broken.Classic.")
+//    }
+//}
+
+//getSeansOpinion(on: .iPhoneSE)]
+
+//enum Phone: String {
+//    case iPhone = "This Will be my next phone."
+//    case nokia = "Can't be broken, Classic."
+//    case pixel = "Hardware is Great. Android is ewww."
+//    case iPhoneSE = "It makes design hard"
+//}
+//
+//func getSeansOpinion(on phone: Phone) {
+//    print(phone.rawValue)
+//}
+//getSeansOpinion(on: .nokia)
