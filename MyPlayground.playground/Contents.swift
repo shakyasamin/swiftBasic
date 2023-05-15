@@ -63,15 +63,47 @@ import UIKit
 //    print("Samin Shakya")
 //}
 //printInstructorName()
+//
+//func printInstructors(name: String) {
+//    print(name)
+//}
+//printInstructors(name: "Joe")
+//
+//
+//func add(firstNumber: Int, to secondNumber: Int) -> Int{
+//    let sum = firstNumber + secondNumber
+//    return sum
+//}
+//add(firstNumber: 18, to: 100)
 
-func printInstructors(name: String) {
-    print(name)
-}
-printInstructors(name: "Joe")
+//     IF/ELSE
+
+//var isDarkModeOn = false
+//
+//if isDarkModeOn
+//{
+//    print("That's how it should be.")
+//}else{
+//    print("You are a psyco")
+//}
+// var myHighScore = 100
+//var yourHighScore = 90
+//
+//if myHighScore > yourHighScore {
+//    print("I win")
+//}else {
+//    print("You win")
+//}
 
 
-func add(firstNumber: Int, to secondNumber: Int) -> Int{
-    let sum = firstNumber + secondNumber
-    return sum
-}
-add(firstNumber: 18, to: 100)
+//var highScore = 1111
+//
+//if highScore > 500 {
+//    print("You're the best")
+//}else if highScore > 250 {
+//    print("You're average")
+//}else if highScore > 100 {
+//    print ("You need improvement")
+//}else {
+//    print("yikes")
+//}
