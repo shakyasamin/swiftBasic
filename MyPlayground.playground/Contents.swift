@@ -167,41 +167,112 @@ import UIKit
 
 //SWITCH STATEMENT
 
-enum Phone {
-    case iPhone
-    case iPhone13ProMax
-    case nokia
-    case pixel
-}
+//enum Phone {
+//    case iPhone
+//    case iPhone13ProMax
+//    case nokia
+//    case pixel
+//}
+//
+//func seansOpinion(on phone:Phone) {
+//    switch phone {
+//    case .iPhone:
+//        print( "This Will be my next phone.")
+//    case .iPhone13ProMax:
+//        print("It makes design hard")
+//    case .nokia:
+//        print("Can't be broken, Classic.")
+//    case .pixel:
+//        print("Hardware is Great. Android is ewww.")
+//    }
+//
+//}
+//seansOpinion(on: .pixel)
+//
+//let matchMakingRank = 1500
+//func determinePlayerLeague(from rank: Int){
+//    switch rank {
+//    case 0:
+//        print("play the game to determine your league")
+//    case 1..<50 :
+//        print("You are in BRONZE League")
+//    case 50..<100:
+//        print("You are in SILVER League")
+//    case 100..<200:
+//        print("You are in GOLD League")
+//    default:
+//        print("You are in a league of your own.We dont know where you are")
+//    }
+//}
+//determinePlayerLeague(from: matchMakingRank)
 
-func seansOpinion(on phone:Phone) {
-    switch phone {
-    case .iPhone:
-        print( "This Will be my next phone.")
-    case .iPhone13ProMax:
-        print("It makes design hard")
-    case .nokia:
-        print("Can't be broken, Classic.")
-    case .pixel:
-        print("Hardware is Great. Android is ewww.")
-    }
-    
-}
-seansOpinion(on: .pixel)
+//OPERATOR
 
-let matchMakingRank = 1500
-func determinePlayerLeague(from rank: Int){
-    switch rank {
-    case 0:
-        print("play the game to determine your league")
-    case 1..<50 :
-        print("You are in BRONZE League")
-    case 50..<100:
-        print("You are in SILVER League")
-    case 100..<200:
-        print("You are in GOLD League")
-    default:
-        print("You are in a league of your own.We dont know where you are")
+//let valueOne:Double = 55
+//let valueTwo :Double = 88
+//let sum = valueOne / valueTwo
+
+//let valueOne = 1000
+//let valueTwo = 1000
+//let sum = valueOne % valueTwo
+//if valueOne != valueTwo {
+//    print("They are NOT equal")
+//}
+//
+//
+//var isDarkModeOn = true
+//if !isDarkModeOn {
+//    print("It's do bright in here")
+//}
+//
+//if valueOne == valueTwo && isDarkModeOn {
+//    print("Dark Mode and they are equal")
+//}
+//
+//
+//var counter = 10
+//counter -= 1
+//
+//let greeting = "Hello"
+//let name = "SEAN"
+//
+//print(greeting + " " + name)
+//
+//let agesYoung = [3,6,9]
+//let agesOld = [99,67,55]
+//
+//let allAges = agesOld + agesYoung
+//print(allAges)
+
+//OPTIONAL
+
+var ages: [Int] = [10,25,50,66,27,29,55]
+ages.sort()
+//let oldestAge = ages.last
+//
+//if let
+//if let oldestAge = ages.last {
+//    print("The oldest age is \(oldestAge)")
+//}else {
+//    print("There is no oldest age. You must have no students")
+//}
+
+//nil coelescing
+
+//let oldestAge = ages.last ?? 99
+//print(oldestAge)
+
+//guard statement
+func getOldestAge() {
+    guard let oldestAge = ages.last else {
+        return
+        //print("no old age value")
     }
+    print("\(oldestAge) is the oldest ages")
+    //a lot of code
 }
-determinePlayerLeague(from: matchMakingRank)
+getOldestAge()
+
+
+//force unwrap
+let oldestAge = ages.last!
