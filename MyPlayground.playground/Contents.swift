@@ -326,37 +326,69 @@ import UIKit
 
 
 //Inheritance
-class Developer {
-    var name: String?
-    var jobTitle: String?
-    var yearsExp :Int?
-    
-    init(name: String, jobTitle: String , yearsExp: Int) {
-        self.name = name
-        self.jobTitle = jobTitle
-        self.yearsExp = yearsExp
-    }
-    func speakName() {
-        print(name!)
-    }
+//class Developer {
+//    var name: String?
+//    var jobTitle: String?
+//    var yearsExp :Int?
+//
+//    init(name: String, jobTitle: String , yearsExp: Int) {
+//        self.name = name
+//        self.jobTitle = jobTitle
+//        self.yearsExp = yearsExp
+//    }
+//    func speakName() {
+//        print(name!)
+//    }
+//}
+//
+//class iosDeveloper: Developer {
+//    var favoriteFramework: String?
+//
+//    func speakFavoriteFramework() {
+//        if let favoriteFramework = favoriteFramework{
+//            print(favoriteFramework)
+//        }else {
+//            print("I dont have a favorite framework")
+//        }
+//    }
+//    override func speakName() {
+//        print("\(name!) - \(jobTitle!)")
+//    }
+//}
+//let sean = iosDeveloper(name: "Sean", jobTitle: "IosEngineer", yearsExp: 5)
+//
+//sean.speakName()
+//sean.favoriteFramework = "ARKiT"
+//sean.speakFavoriteFramework()
+
+
+//STRUCT- value types - light weigth than classes - memberwise initializer
+//reference type
+
+//class Developer {
+//    var name: String?
+//    var jobTitle: String?
+//    var yearsExp :Int?
+//
+//    init(name:String, jobTitle:String, yearsExp:Int){
+//        self.name = name
+//        self.jobTitle = jobTitle
+//        self.yearsExp = yearsExp
+//    }
+//}
+//
+//var samin = Developer(name: "Samin", jobTitle: "iOS Engineer", yearsExp: 2)
+//var joe = samin
+//joe.name = "joe"
+//samin.name
+
+value type
+struct Developer {
+    var name: String
+    var jobTitle: String
+    var yearsExp: Int
 }
 
-class iosDeveloper: Developer {
-    var favoriteFramework: String?
-    
-    func speakFavoriteFramework() {
-        if let favoriteFramework = favoriteFramework{
-            print(favoriteFramework)
-        }else {
-            print("I dont have a favorite framework")
-        }
-    }
-    override func speakName() {
-        print("\(name!) - \(jobTitle!)")
-    }
-}
-let sean = iosDeveloper(name: "Sean", jobTitle: "IosEngineer", yearsExp: 5)
-
-sean.speakName()
-sean.favoriteFramework = "ARKiT"
-sean.speakFavoriteFramework()
+var samin = Developer(name: "Samin", jobTitle: "iOS Engineer", yearsExp: 2)
+var joe = samin
+samin.name
