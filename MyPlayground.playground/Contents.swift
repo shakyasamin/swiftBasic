@@ -246,8 +246,8 @@ import UIKit
 
 //OPTIONAL
 
-var ages: [Int] = [10,25,50,66,27,29,55]
-ages.sort()
+//var ages: [Int] = [10,25,50,66,27,29,55]
+//ages.sort()
 //let oldestAge = ages.last
 //
 //if let
@@ -263,16 +263,63 @@ ages.sort()
 //print(oldestAge)
 
 //guard statement
-func getOldestAge() {
-    guard let oldestAge = ages.last else {
-        return
-        //print("no old age value")
-    }
-    print("\(oldestAge) is the oldest ages")
-    //a lot of code
-}
-getOldestAge()
+//func getOldestAge() {
+//    guard let oldestAge = ages.last else {
+//        return
+//        //print("no old age value")
+//    }
+//    print("\(oldestAge) is the oldest ages")
+//    //a lot of code
+//}
+//getOldestAge()
 
 
 //force unwrap
-let oldestAge = ages.last!
+//let oldestAge = ages.last!
+
+
+//SELF
+
+//CLASS - object that can have properties and function attached to it
+
+//class Developer {
+//    var name: String
+//    var jobTitle: String
+//    var yearsExp : Int
+//
+//
+//    init(name: String, jobTitle: String, yearsExp: Int) {
+//        self.name = name
+//        self.jobTitle = jobTitle
+//        self.yearsExp = yearsExp
+//    }
+//}
+//
+//let sean  = Developer(name: "Sean", jobTitle: "IOS Engineer", yearsExp: 5)
+//sean.name
+//sean.jobTitle
+//sean.yearsExp
+
+
+class Developer {
+    var name: String?
+    var jobTitle: String?
+    var yearsExp :Int?
+    
+    init(){}
+    
+    init(name: String, jobTitle: String , yearsExp: Int) {
+        self.name = name
+        self.jobTitle = jobTitle
+        self.yearsExp = yearsExp
+    }
+    func speakName() {
+        print(name!)
+    }
+}
+let sean = Developer(name: "joee", jobTitle: "Coder", yearsExp: 2)
+
+sean.name
+sean.jobTitle
+sean.yearsExp
+sean.speakName()
