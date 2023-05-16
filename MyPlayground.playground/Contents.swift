@@ -301,12 +301,35 @@ import UIKit
 //sean.yearsExp
 
 
+//class Developer {
+//    var name: String?
+//    var jobTitle: String?
+//    var yearsExp :Int?
+//
+//    init(){}
+//
+//    init(name: String, jobTitle: String , yearsExp: Int) {
+//        self.name = name
+//        self.jobTitle = jobTitle
+//        self.yearsExp = yearsExp
+//    }
+//    func speakName() {
+//        print(name!)
+//    }
+//}
+//let sean = Developer(name: "joee", jobTitle: "Coder", yearsExp: 2)
+//
+//sean.name
+//sean.jobTitle
+//sean.yearsExp
+//sean.speakName()
+
+
+//Inheritance
 class Developer {
     var name: String?
     var jobTitle: String?
     var yearsExp :Int?
-    
-    init(){}
     
     init(name: String, jobTitle: String , yearsExp: Int) {
         self.name = name
@@ -317,9 +340,23 @@ class Developer {
         print(name!)
     }
 }
-let sean = Developer(name: "joee", jobTitle: "Coder", yearsExp: 2)
 
-sean.name
-sean.jobTitle
-sean.yearsExp
+class iosDeveloper: Developer {
+    var favoriteFramework: String?
+    
+    func speakFavoriteFramework() {
+        if let favoriteFramework = favoriteFramework{
+            print(favoriteFramework)
+        }else {
+            print("I dont have a favorite framework")
+        }
+    }
+    override func speakName() {
+        print("\(name!) - \(jobTitle!)")
+    }
+}
+let sean = iosDeveloper(name: "Sean", jobTitle: "IosEngineer", yearsExp: 5)
+
 sean.speakName()
+sean.favoriteFramework = "ARKiT"
+sean.speakFavoriteFramework()
