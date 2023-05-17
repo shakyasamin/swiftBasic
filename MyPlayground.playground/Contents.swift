@@ -382,7 +382,7 @@ import UIKit
 //joe.name = "joe"
 //samin.name
 
-value type
+//value type
 struct Developer {
     var name: String
     var jobTitle: String
@@ -392,3 +392,28 @@ struct Developer {
 var samin = Developer(name: "Samin", jobTitle: "iOS Engineer", yearsExp: 2)
 var joe = samin
 samin.name
+
+//EXTENSION
+
+extension String {
+    func removeWhiteSpace() -> String {
+        return components(separatedBy:  .whitespaces).joined()
+    }
+}
+
+let alphabet = "A B C D E F"
+print(alphabet)
+print(alphabet.removeWhiteSpace())
+
+extension UIButton {
+    func pulsate() {
+        let pulse = CASpringAnimation(keyPath: "transform.scale")
+        pulse.duration = 0.6
+        pulse.fromValue = 0.95
+        pulse.toValue = 1.0
+        pulse.autoreverses = true
+        pulse.initialVelocity = 0.5
+        pulse.damping = 1.0
+        layer.add(pulse, forKey: "pulse")
+    }
+}
